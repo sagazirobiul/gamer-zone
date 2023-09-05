@@ -211,9 +211,11 @@ nav .youtube {
     text-align: center;
     margin-bottom: 1.6rem;
 }
-.online-games-container>p{
+
+.online-games-container>p {
     padding: 1rem;
 }
+
 .online-games-img-container {
     margin-top: 3rem;
     display: flex;
@@ -307,14 +309,81 @@ nav .youtube {
 
 }
 
+/* Careers Styles */
+.careers {
+    margin-top: 5rem;
+    background-color: var(--pink);
+    color: #fff;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.careers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.careers-content {
+    width: 50%;
+}
+
+.careers-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.careers-description {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.workers-container {
+    display: flex;
+    gap: 1.8rem;
+    margin: 2rem 0;
+}
+
+.careers-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.careers-content li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.careers-container img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.careers-btn {
+    font-size: 1.25rem;
+    border-radius: 2.8rem;
+    background: #FFF;
+    color: var(--pink);
+    padding: 1.25rem 2.5rem;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
 /* Catagories styles */
 .categories {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
 }
 
 .categories-container {
-    margin-top: 5rem;
-    padding: 7rem 0;
+    padding: 8rem 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.2rem;
@@ -481,9 +550,10 @@ footer {
     }
 
     .play-instant {
-        padding: 1rem 0;
+        padding: 1rem 0 0;
         text-align: center;
         gap: 2rem;
+        margin-bottom: -120px;
     }
 
     .play-instant-content {
@@ -508,7 +578,6 @@ footer {
     }
 
     .categories-container {
-        margin-top: -120px;
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 1rem;
     }
@@ -524,13 +593,14 @@ footer {
     }
 
     .footer-page-links,
-    .social-links{
+    .social-links {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         justify-items: center;
     }
-    .terms-and-conditions{
+
+    .terms-and-conditions {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -541,9 +611,23 @@ footer {
         font-size: 1.3rem;
         margin: 1.7rem 0;
     }
-    
+
     .terms-and-conditions li {
         margin-left: 0;
+    }
+    .careers-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    .careers-container img {
+        margin-top: 2rem;
+        position: static;
+        width: 100%;
+    }
+
+    .careers-content {
+        width: 100%;
     }
 }
 
@@ -597,7 +681,7 @@ footer {
     }
 
     .play-instant {
-        padding: 1rem 0;
+        padding: 1rem 0 6rem;
         text-align: center;
         gap: 2rem;
     }
@@ -620,7 +704,6 @@ footer {
     .categories-container {
         grid-template-columns: repeat(3, 1fr);
         padding: 2rem 1rem;
-        margin-top: 200px;
     }
 
     .categories-card>img {
@@ -634,13 +717,14 @@ footer {
     }
 
     .footer-page-links,
-    .social-links{
+    .social-links {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         justify-items: center;
     }
-    .terms-and-conditions{
+
+    .terms-and-conditions {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -650,8 +734,23 @@ footer {
         font-size: 1.3rem;
         margin: 1.7rem 0;
     }
-    
+
     .terms-and-conditions li {
         margin-left: 0;
+    }
+
+    .careers-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    .careers-container img {
+        margin-top: 2rem;
+        position: static;
+        width: 100%;
+    }
+
+    .careers-content {
+        width: 100%;
     }
 }
