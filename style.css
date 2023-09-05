@@ -282,7 +282,8 @@ nav .youtube {
 
     .nav-container,
     nav ul,
-    .header-container {
+    .header-container,
+    .online-games-img-container {
         flex-direction: column;
     }
 
@@ -311,6 +312,19 @@ nav .youtube {
 
     .we-are-gamer-content {
         text-align: center;
+    }
+    
+    .online-games-img-container{
+        padding: 0 1rem;
+    }
+
+    .online-games-img-container .img-card{
+        height: auto;
+    }
+
+    .watch-now-box {
+        width: 98%;
+        height: 98%;
     }
 }
 
@@ -345,5 +359,20 @@ nav .youtube {
 
     .we-are-gamer-content {
         text-align: center;
+    }
+
+    .online-games-img-container .img-card{
+        height: auto;
+    }
+
+    .online-games-img-container{
+        padding: 0 1.4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .watch-now-box {
+        width: 98%;
+        height: 98%;
     }
 }
