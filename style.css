@@ -33,6 +33,7 @@ body {
     display: inline-block;
     padding: 20px 45px;
     margin: 1rem 0;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -45,6 +46,7 @@ body {
     display: inline-block;
     padding: 20px 45px;
     margin-left: 0.8rem;
+    cursor: pointer;
 }
 
 .section-title {
@@ -223,7 +225,7 @@ nav .youtube {
     height: 400px;
 }
 
-.img-card > p {
+.img-card>p {
     color: #454052;
     font-size: 1.25rem;
     font-weight: 500;
@@ -273,6 +275,34 @@ nav .youtube {
     cursor: pointer;
 }
 
+/* Play instant section styles */
+.play-instant {
+    padding: 7rem 0;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-instant-content{
+    padding-right:2rem;
+}
+
+.play-instant-img-box{
+    height: 650px;
+}
+
+.play-instant-second-img {
+    background-color: #fff;
+    position: relative;
+    width: 290px;
+    height: 330px;
+    border: 0.4rem solid #fff;
+    top: -250px;
+    left: -140px;
+
+}
+
 
 
 /* Media Quires */
@@ -283,7 +313,8 @@ nav .youtube {
     .nav-container,
     nav ul,
     .header-container,
-    .online-games-img-container {
+    .online-games-img-container,
+    .play-instant {
         flex-direction: column;
     }
 
@@ -313,18 +344,43 @@ nav .youtube {
     .we-are-gamer-content {
         text-align: center;
     }
-    
-    .online-games-img-container{
+
+    .online-games-img-container {
         padding: 0 1rem;
     }
 
-    .online-games-img-container .img-card{
+    .online-games-img-container .img-card {
         height: auto;
     }
 
     .watch-now-box {
         width: 98%;
         height: 98%;
+    }
+
+    .play-instant{
+        padding: 1rem 0;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .play-instant-content{
+        padding-right: 0;
+    }
+    .play-instant-img-box{
+        padding: 0 3rem;
+    }
+
+    .play-instant-main-img{
+        width: 100%;
+        height: auto;
+    }
+    .play-instant-second-img {
+        width: 40%;
+        height: auto;
+        top: -20%;
+        left: -40%;
+    
     }
 }
 
@@ -334,7 +390,8 @@ nav .youtube {
 @media screen and (min-width: 576px) and (max-width: 991px) {
 
     .nav-container,
-    .header-container {
+    .header-container,
+    .play-instant {
         flex-direction: column;
     }
 
@@ -361,11 +418,11 @@ nav .youtube {
         text-align: center;
     }
 
-    .online-games-img-container .img-card{
+    .online-games-img-container .img-card {
         height: auto;
     }
 
-    .online-games-img-container{
+    .online-games-img-container {
         padding: 0 1.4rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -374,5 +431,26 @@ nav .youtube {
     .watch-now-box {
         width: 98%;
         height: 98%;
+    }
+
+    .play-instant{
+        padding: 1rem 0;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .play-instant-content{
+        padding-right: 0;
+    }
+
+    .play-instant-img-box{
+        padding: 0 3rem;
+    }
+
+    .play-instant-second-img {
+        width: 40%;
+        height: auto;
+        top: -25%;
+        left: -37%;
     }
 }
