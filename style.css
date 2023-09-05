@@ -211,7 +211,9 @@ nav .youtube {
     text-align: center;
     margin-bottom: 1.6rem;
 }
-
+.online-games-container>p{
+    padding: 1rem;
+}
 .online-games-img-container {
     margin-top: 3rem;
     display: flex;
@@ -249,13 +251,12 @@ nav .youtube {
     height: 97%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 5px solid var(--pink);
+    border-radius: 1rem;
+    border: 5px solid transparent;
 }
 
 .watch-now-box>span {
@@ -273,6 +274,9 @@ nav .youtube {
 .img-box:hover .watch-now-box {
     visibility: visible;
     cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    border: 5px solid var(--pink);
+    transition: 0.3s;
 }
 
 /* Play instant section styles */
