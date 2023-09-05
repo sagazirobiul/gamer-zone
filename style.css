@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Shared Styles */
+:root {
+    --black: #0B0223;
+    --pink: #FF42A5;
+    --p-text: #534C64;
+}
+
+.middle-box {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.linear-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    border-radius: 48px;
+    background: var(--pink);
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 45px;
+    margin: 1rem 0;
+}
+
+.btn-secondary {
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 45px;
+    margin-left: 0.8rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* Header Styles */
+nav {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title,
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title img {
+    width: 86.041px;
+    height: 40px;
+}
+
+.nav-highlight {
+    color: var(--pink);
+}
+
+.nav-title h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+    margin-left: 0.8rem;
+}
+
+nav li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    list-style: none;
+    margin-right: 1.8rem;
+}
+
+nav a {
+    color: #3C354F;
+    text-decoration: none;
+}
+
+nav .follow-us-box {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+nav .youtube {
+    color: red;
+}
+
+.header-content {
+    background-image: url("images/Group\ 14.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.header-main-content {
+    padding: 5rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h2 {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header-container h1 {
+    font-size: 5.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+.header-container p {
+    color: var(--p-text);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.header-container img {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+}
+
+
+/* We are gamer */
+
+
+
+
+/* Media Quires */
+/* Mobile Devices Responsive*/
+
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    nav ul,
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .header-content {
+        background-size: 150%;
+    }
+
+    .header-container img {
+        position: static;
+        width: 90%;
+    }
+}
+
+
+/* Tablet responsive */
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+    .nav-container,
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-content {
+        background-size: 100%;
+    }
+
+    .header-container img {
+        position: static;
+        width: 85%;
+    }
+}
