@@ -283,7 +283,7 @@ nav .youtube {
 
 /* Play instant section styles */
 .play-instant {
-    padding: 7rem 0;
+    padding: 5.5rem 0 7rem;
     gap: 6rem;
     display: flex;
     align-items: center;
@@ -354,6 +354,7 @@ nav .youtube {
     list-style: none;
     font-size: 1.1rem;
     font-weight: 600;
+    line-height: 2rem;
 }
 
 .careers-container img {
